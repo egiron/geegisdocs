@@ -1,0 +1,57 @@
+---
+title: Example Guide
+description: A guide in my new Starlight docs site.
+banner:
+  content: |
+    ¡Acabamos de lanzar algo genial!
+    <a href="https://example.com">Checalo</a>
+lastUpdated: 2022-08-09
+---
+
+Guides lead a user through a specific task they want to accomplish, often with a sequence of steps.
+Writing a good guide requires thinking about what your users are trying to do.
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+<CardGrid>
+  <Card title="Revisa esto" icon="open-book">
+    Contenido interesante que deseas destacar.
+  </Card>
+  <Card title="Otra caracaterística" icon="information">
+    Más información que deseas compartir.
+  </Card>
+</CardGrid>
+
+## Aside
+
+import { Aside } from '@astrojs/starlight/components';
+
+<Aside>Contenido en un apartado.</Aside>
+
+<Aside type="caution">Contenido de precaución.</Aside>
+
+<Aside type="tip">
+Otro tipo de contenido también es compatible en los apartados.
+
+```js
+// Por ejemplo, un fragmento de código.
+```
+
+```python
+# Serve the static HTML file for the index page
+@app.route("/")
+def index():
+    return flask.Response(INDEX_HTML, mimetype='text/html')
+
+if __name__ == '__main__':
+    # Start on localhost
+    app.run(debug=True)
+```
+
+</Aside>
+
+<Aside type="danger">No des tu contraseña a nadie.</Aside>
+
+## Further reading
+
+- Read [about how-to guides](https://diataxis.fr/how-to-guides/) in the Diátaxis framework

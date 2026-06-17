@@ -1,0 +1,6 @@
+:root {
+  /* https://github.com/withastro/starlight/blob/main/packages/starlight/style/props.css */
+  --sl-content-width: 50rem;
+  --sl-text-5xl: 3.5rem;
+  /* --sl-color-bg-sidebar: black; */
+}

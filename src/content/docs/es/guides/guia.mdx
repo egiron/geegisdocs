@@ -1,0 +1,45 @@
+---
+title: Guía de principiante
+description: Una nueva guía para mi sitio.
+tableOfContents: false
+# tableOfContents:
+#   minHeadingLevel: 2
+#   maxHeadingLevel: 2
+sidebar:
+  # Usa la variante predeterminada que coincide con el color de acento de tu sitio
+  badge: Nuevo
+---
+
+import { LinkCard, CardGrid } from '@astrojs/starlight/components';
+
+<CardGrid>
+  <LinkCard title="Mapas"
+    href="/geegisdocs/es/guides/maps/"
+    description="Despliega un mapa en la documentación."
+  />
+  <LinkCard title="FAQs" href="/geegisdocs/es/reference/faq/" />
+</CardGrid>
+
+Guía para incluir mapas en la documentación de Startlight.
+
+<div data-pagefind-ignore>
+
+Este texto estará oculto de la búsqueda.
+
+</div>
+
+import { LinkButton } from '@astrojs/starlight/components';
+
+<LinkButton href="/geegisdocs/es/guides/example">Comienza</LinkButton>
+<LinkButton href="/geegisdocs/es/reference/example/" variant="secondary">
+  Referencia de configuración
+</LinkButton>
+
+<LinkButton
+  href="https://docs.astro.build"
+  variant="secondary"
+  icon="external"
+  iconPlacement="start"
+>
+  Relacionado: Astro
+</LinkButton>
